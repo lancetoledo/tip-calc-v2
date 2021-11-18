@@ -29,7 +29,7 @@ body {
     /* background-color: yellow; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -61,7 +61,24 @@ body {
     /* background-color: green; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px
+}
+
+.buttons button {
+    width: 100px;
+    height: 40px;
+}
+
+.buttons input {
+    width: 100px;
+    height: 40px;
 }
 
 .row {
