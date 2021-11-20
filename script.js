@@ -10,16 +10,29 @@ let tipSplit = (billAmount, percentage, amtPeople) => {
     billAmount = parseInt(bill.value);
     amtPeople = parseFloat(people.value);
 
-
-    if(billAmount && percentage && amtPeople || custom.value) {
+    if (custom.value) {
+        percentage = parseFloat(custom.value / 100);
         console.log(percentage)
+        console.log("HI")
 
+        if(billAmount && amtPeople) {
+            let tipPerPerson = (billAmount * percentage) / amtPeople;
 
-        if (custom.value) {
-            percentage = parseFloat(custom.value / 100);
-            console.log("HI")
-            
+            let totalPerPerson = (billAmount / amtPeople) + tipPerPerson;
+        
+            document.getElementById("tip-per-person").innerText = "$" + tipPerPerson.toFixed(2);
+        
+            document.getElementById("total-per-person").innerText = "$" + totalPerPerson;
         }
+        
+    }
+
+
+    if(billAmount && percentage && amtPeople) {
+        console.log(percentage)
+console.log("YOO")
+
+
 
         let tipPerPerson = (billAmount * percentage) / amtPeople;
 

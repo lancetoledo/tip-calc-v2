@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-content: space-e;
     background-color: hsl(172, 67%, 45%);
 }
 
@@ -81,20 +82,20 @@ body {
     height: 40px;
 }
 
-.row {
-    /* background-color: red; */
+/* .row {
+    background-color: red;
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
-.row button {
+/* .row button {
     width: 100px;
     height: 40px;
-}
+} */
 
 .people {
     width: 100%;
@@ -145,4 +146,57 @@ body {
     border: none;
     background-color: bisque;
     padding: 10px;
+}
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .left {
+        /* background-color: black; */
+        width: 100%;
+        height: 80%;
+    }
+
+
+
+    .tip {
+        width: 100%;
+        height: 200px;
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .buttons {
+        display: grid;
+        background-color: antiquewhite;
+        grid-template-columns: 1fr 1fr  ;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: auto;
+    }
+
+    .right {
+        width: 100%;
+        height: 45%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
