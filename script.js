@@ -40,7 +40,7 @@ console.log("YOO")
     
         document.getElementById("tip-per-person").innerText = "$" + tipPerPerson.toFixed(2);
     
-        document.getElementById("total-per-person").innerText = "$" + totalPerPerson;
+        document.getElementById("total-per-person").innerText = "$" + totalPerPerson.toFixed(2);
     }
 
 
@@ -67,3 +67,13 @@ console.log("YOO")
         })
     })
     
+
+    function reset() {
+        document.getElementById("tip-per-person").innerText = "$0.00" 
+        
+        document.getElementById("total-per-person").innerText = "$0.00" 
+        bill.value = ""
+        people.value = ""
+        custom.value = ""
+
+    }

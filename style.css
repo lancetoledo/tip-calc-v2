@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,8 +12,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-content: space-e;
-    background-color: hsl(172, 67%, 45%);
+    justify-content: space-evenly;
+    background-color: #C4E0E9;
+    font-family: 'Space Mono', monospace;
 }
 
 .container {
@@ -44,7 +47,7 @@ body {
     display: flex;
     align-items: center;
     width: 95%;
-    background-color: antiquewhite;
+    background-color: #F6F7FC;
     height: 30px;
 }
 
@@ -54,6 +57,7 @@ body {
     border: none;
     outline: none;
     text-align: end;
+    font-family: 'Space Mono', monospace;
 }
 
 .tip {
@@ -69,17 +73,28 @@ body {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-column-gap: 10px;
-    grid-row-gap: 10px
+    grid-row-gap: 10px;
 }
 
 .buttons button {
     width: 100px;
     height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border:none;
+    background: #00404B;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
 }
 
 .buttons input {
     width: 100px;
     height: 40px;
+    font-family: 'Space Mono', monospace;
+    border-radius: 10px;
+    border: .5px solid gray ;
+    text-align: center;
 }
 
 /* .row {
@@ -115,6 +130,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    color: rgb(228, 225, 225);
 }
 
 .totals {
@@ -132,6 +148,7 @@ body {
     display: flex;
     width: 80%;
     justify-content: space-between;
+    color: lightgray
 }
 
 .reset {
@@ -144,9 +161,16 @@ body {
     width: 80%;
     background: none;
     border: none;
-    background-color: bisque;
+    background-color: rgb(140, 140, 140);
     padding: 10px;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
 }
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 @media (max-width: 480px) {
     body {

@@ -17,7 +17,7 @@
                 <p>Bill</p>
                 <div class="input_container">
                     <img src="./images/icon-dollar.svg" alt="">
-                    <input id="bill-input" type="text">
+                    <input id="bill-input" type="number">
                 </div>
                 
             </div>
@@ -31,7 +31,7 @@
                     <button class="button">15%</button>
                     <button class="button">20%</button>
                     <button class="button">30%</button>
-                    <input id="custom"type="text">
+                    <input id="custom"type="number">
                 </div>
                 <!-- <div class="row">
                     <button>5%</button>
@@ -44,15 +44,13 @@
                     <button>30%</button>
                     <button>Custom</button>
                 </div> -->
-
-
             </div>
 
             <div class="people">
                 <p>Number of People</p>
                 <div class="input_container">
                     <img src="./images/icon-person.svg" alt="">
-                    <input id= "number-of-people"type="text">
+                    <input id= "number-of-people"type="number">
                 </div>
             </div>
         </div>
@@ -64,7 +62,7 @@
                         <p>/person</p>
                     </div>
                     
-                    <h1 id="tip-per-person">$4.27</h1>
+                    <h1 id="tip-per-person">$0.00</h1>
 
                 </div>
                 <div class="amount">
@@ -73,11 +71,11 @@
                         <p>/person</p>
                     </div>
 
-                    <h1 id="total-per-person">$32.79</h1>
+                    <h1 id="total-per-person">$0.00</h1>
                 </div>
             </div>
             <div class="reset">
-                <button>RESET</button>
+                <button onclick="reset()">RESET</button>
             </div>
         </div>
     </div>
