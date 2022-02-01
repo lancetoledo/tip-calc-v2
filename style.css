@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-content: space-evenly;
+    gap: 60px;
     background-color: #C4E0E9;
     font-family: 'Space Mono', monospace;
 }
@@ -49,6 +49,8 @@ body {
     width: 95%;
     background-color: #F6F7FC;
     height: 30px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .input_container input {
@@ -135,12 +137,11 @@ body {
 
 .totals {
     width: 100%;
-    height: 100px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .amount {
@@ -161,6 +162,7 @@ body {
     width: 80%;
     background: none;
     border: none;
+    border-radius: 5px;
     background-color: rgb(140, 140, 140);
     padding: 10px;
     font-family: 'Space Mono', monospace;
